@@ -24,7 +24,7 @@ body {
     height: 90%;
     background:white;
     z-index: -1;
-    background-image: url(images/bg4.PNG);
+    background-image: url(images/bg\ 2.PNG);
 }
 
 .logo2 {
@@ -53,7 +53,7 @@ body {
 .btn {
     display: inline-block;
     background-color: #fff;
-    color: #333;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -73,19 +73,9 @@ body {
     max-width: 200px; 
     margin-bottom: 40px;
     display: block;
-    margin-right: 200%;
-}
+    margin: 5%;
+    margin-right: 100%;
 
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header-content {
@@ -97,7 +87,7 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    margin-left: 300%;
+    margin-left: 200%;
     padding: 0;
 }
 
