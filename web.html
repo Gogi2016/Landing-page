@@ -10,7 +10,7 @@
     <title>Computer Repair and Software Installation</title>
 </head>
 
-<body>
+<div>
     <header class="hero-section">
         <div class="overlay">
             <div class="container">
@@ -19,7 +19,7 @@
                         <ul>
                             <li><a href="#about">About</a></li>
                             <li><a href="#features">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Pages</a></li>
                         </ul>
                     </nav>
                     <img src="images/logo.PNG" alt="My Logo" class="logo">
@@ -32,9 +32,32 @@
     <div class="text-center" style="color: white;">
         <h1>Professional Computer Repair & Software Installation</h1>
         <p>Fast and reliable services for all your computer needs</p>
-        <a href="#" class="btn">Call us Now</a>
+        <a href="#" class="btn" onclick="openPopup()">Contact us Now</a>
     </div>
+
+    <div id="contactPopup" class="popup-container">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Contact Information</h2>
+        <p>Our Phone Number: +241 562 1455</p>
+        <p>Our Email: <a href="mailto:Computer@repairs.org.za">Computer@repairs.org.za</a></p>
     
+        <div class="form-container">
+            <h2>Leave us a message</h2>
+    
+            <form>
+                <label for="name">Enter your Full Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Enter your message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </div>
 
 
     <div id="about">
@@ -59,7 +82,7 @@
                 expresses gratitude for choosing their services and looks forward to exceeding expectations with exceptional service.</p>
         </div>
     </div>
-
+</div>
 
     <div id="features">
         <div class="container">
@@ -93,7 +116,7 @@
             <div class="service">
                 <img src="images/OPS.PNG" alt="Computer Repair" height="250" width="480">
                 <div class="service-details">
-                    <h3>Operating System Install</h3>
+                    <h3>Operating System Installation</h3>
                     <p>Enhance your website with our OPA rating system installation, 
                         providing an efficient and reliable way to gather and display user feedback seamlessly</p>
                 </div>
@@ -108,45 +131,44 @@
         <h2>Testemonials</h2>
         <div id="image-container">
             <div class="slide">
-                <img src="images/Person 3.PNG">
+                <img src="images/Person 3.PNG" alt="Belinda">
                 <div class="content">
                   <h3>Belinda</h3>
                     <p>"Outstanding computer repair and software installation service!<br>
-                             The team was professional, knowledgeable, and efficient. 
+                             The team was professional, knowledgeable, and efficient.<br> 
                              I highly recommend their services</p><br>. 
                              
-                             <strong>Rated: 4.5/5</strong>"</p>
+                             <strong>Rated: 1000/5</strong>"
                 </div>
             </div>
           
            <div class="slide">
-                <img src="images/Person 3.PNG">
+                <img src="images/Person 3.PNG" alt="Vivian">
                 <div class="content">
                   <h3>Vivian</h3>
                     <p>"I thought I had lost all my data, but thanks to these experts, <br>
                         they not only repaired my computer but <br>also recovered my important files. 
                         Exceptional service! </p><br> 
                         
-                        <strong>Rated: 4.5/5</strong>"</p>
+                        <strong>Rated: 4.5/5</strong>"
                 </div>
             </div>
             
             <div class="slide">
-                <img src="images/Person 3.PNG">
+                <img src="images/Person 3.PNG" alt="Lutho">
                 <div class="content">
                   <h3>Lutho</h3>
                     <p>"I recently had my computer repaired by this amazing team. <br>
                             They fixed all the issues promptly and installed the necessary   software.<br> 
                             I'm extremely satisfied with their service.</p> <br> 
                             
-                            <strong>Rated: 4.5/5</strong>"</p>
+                            <strong>Rated: 5/5</strong>"
                 </div>
             </div>
-          
         </div>
     </div>
-        </div>
-    </div>
+</div>
+
 
         <div id="contact">
             <div class="container">
@@ -157,7 +179,7 @@
 
         </div>
         </div>
-
+    </div>
     <footer>
         <div class="container">
             <p>&copy; 2024 Your Computer Repair. All rights reserved.</p>
